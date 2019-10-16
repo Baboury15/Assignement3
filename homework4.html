@@ -1,0 +1,72 @@
+<html>
+<head>
+    
+    <style> 
+    #ibra{
+
+    position: relative;
+    margin: 300px;
+    background-color: ;
+        width: 500px;
+        height: 300px;
+        border-radius: 50%;
+        top: -30px;
+        float: right;
+    font-weight: 400:
+            
+    
+    }
+    
+    
+    
+    </style>
+  </head>  
+   
+<body>
+    
+      
+     <h1 id ="empty"></h1>
+    <div id="ibra"> 
+<script>
+     
+function pass_validation()
+{  
+var password=document.myform.password.value;  
+    var name  = "your log in !"
+
+  
+if (password != 12345678)
+{  
+  alert("wrong password");  
+  return false;  
+}
+    
+else if(password.length<8)
+{  
+  alert("Password must be at least 8 characters long.");  
+  return false;  
+  } 
+    else if (password == 12345678){
+        password=document.myform.password.value = password=document.myform.password.value+name;
+        
+        document.getElementById("empty").innerHTML= "you log in"//+name;
+        
+        
+    }
+   
+   
+}  
+    
+ 
+</script>
+
+  
+    
+    
+     
+<form name="myform" method="post" action="register." onsubmit="return pass_validation()" >  
+Password: <input type="password" name="password">  
+<input type="submit" value="submit">  
+</form>  
+  </div>
+      
